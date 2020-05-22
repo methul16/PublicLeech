@@ -54,31 +54,31 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["leech@TorrentLeecher1_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@TorrentLeech2_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
-        filters=Filters.command(["purge@TorrentLeecher1_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["purge@TorrentLeech2_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdl@TorrentLeecher1_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@TorrentLeech2_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
-        filters=Filters.command(["status@TorrentLeecher1_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["status@TorrentLeech2_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(status_message_handler)
     #
     cancel_message_handler = MessageHandler(
         cancel_message_f,
-        filters=Filters.command(["cancel@TorrentLeecher1_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["cancel@TorrentLeech2_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(cancel_message_handler)
     #
